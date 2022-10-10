@@ -21,13 +21,13 @@ Credits go to the following:
    - Keep the TV on
 2. Build the application
    ```
-   create directory : 
+   #create directory : 
    mkdir jellyfin 
    
    create Dockerfile 
-   nano Dockerfile ( past the content if the docker file above)
+   nano Dockerfile #past the content of the docker file above
    
-   build image with Doocker 
+   #build image with Doocker 
    docker build -t jellyfin .
    ```
    If it fails to execute `expect.sh` in the last step, you might need to [download it again from here](https://github.com/babagreensheep/jellyfin-tizen-docker/blob/master/expect.sh) and overwrite the one in the directory from which you're building.
