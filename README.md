@@ -21,9 +21,18 @@ Credits go to the following:
    - Keep the TV on
 2. Build the application
    ```
+   create directory : 
+   mkdir jellyfin 
+   
+   create Dockerfile 
+   nano Dockerfile ( past the content if the docker file above)
+   
+   build image with Doocker 
    docker build -t jellyfin .
    ```
    If it fails to execute `expect.sh` in the last step, you might need to [download it again from here](https://github.com/babagreensheep/jellyfin-tizen-docker/blob/master/expect.sh) and overwrite the one in the directory from which you're building.
+   (simply if you have the error [OPY failed: file not found in build context or excluded by .dockerignore: stat expect.sh: file does not exist], create /home/jellyfin/jellyfin-tizen/expect.sh __ copy the content of [https://github.com/babagreensheep/jellyfin-tizen-docker/blob/master/expect.sh] to /home/jellyfin/jellyfin-tizen/expect.sh with nano 
+   
 3. Deploy the application to the TV:
    - Run the container with the attached terminal
      ```
